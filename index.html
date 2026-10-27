@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fuel Density — Explore wildfire</title><link rel="stylesheet" href="styles.css"><script defer src="engine.js"></script><script defer src="app.js"></script></head>
+<body><a class="skip" href="#controls">Skip to simulation controls</a>
+<header><div class="eyebrow">AN ECOSYSTEM EXPLORATION</div><h1>Fuel Density</h1><p>How do vegetation and climate shape a wildfire?</p></header>
+<main><section class="intro"><h2>A forest is also fuel.</h2><p>Trees and shrubs can fuel a wildfire. Suppressing fires allows more vegetation to accumulate. Warmer, drier conditions make that vegetation more likely to ignite. Change the conditions, start a fire, and observe what remains.</p></section>
+<div class="layout"><section class="forest-panel" aria-labelledby="forest-title"><div class="panel-heading"><div><h2 id="forest-title">Your forest</h2><p id="population"></p></div><div class="forest-actions"><span id="badge">Ready</span><button id="pause" class="secondary" disabled>Pause</button></div></div>
+<div id="forest" role="img" aria-label="Forest before ignition"></div>
+<div class="legend"><span><b class="tree-key">▲</b> Tree</span><span><b class="shrub-key">●</b> Shrub</span><span><b class="fire-key">♦</b> Burning</span><span><b>×</b> Burned</span></div>
+<div id="status" role="status" aria-live="polite" aria-atomic="true">Set your conditions, then select GO.</div>
+<section class="results" aria-labelledby="results-title"><h2 id="results-title">What happened?</h2><p id="results-note">Results update as the fire spreads.</p><div class="metrics">
+<div><strong id="total-result">0%</strong><span>Total fuel burned</span><small id="total-count"></small></div>
+<div><strong id="tree-result">0%</strong><span>Trees burned</span><small>of starting trees</small></div>
+<div><strong id="shrub-result">0%</strong><span>Shrubs burned</span><small>of starting shrubs</small></div>
+<div><strong id="density-result">30%</strong><span>Remaining fuel density</span><small>intact plants / 100 cells</small></div>
+</div></section></section>
+<aside id="controls" tabindex="-1"><h2>Set the conditions</h2><p class="hint">Explore one change at a time.</p><fieldset id="settings"><legend class="sr-only">Forest and climate settings</legend>
+<div class="control"><label for="suppression">Fire suppression <output for="suppression" id="suppression-value">0%</output></label><input id="suppression" type="range" min="0" max="100" step="1" value="0" aria-describedby="suppression-help"><div class="endpoints"><span>Low</span><span>High</span></div><p id="suppression-help">More fire suppression means more trees and shrubs accumulate. In this simplified model, accumulated fuel also increases ignition risk.</p></div>
+<div class="control"><label for="temperature">Temperature <output for="temperature" id="temperature-value">70 °F</output></label><input id="temperature" type="range" min="70" max="90" step="1" value="70" aria-describedby="temperature-help"><div class="endpoints"><span>70 °F</span><span>90 °F</span></div><p id="temperature-help">Higher temperatures make vegetation more likely to ignite.</p></div>
+<div class="control"><label for="precipitation">Precipitation <output for="precipitation" id="precipitation-value">80 days</output></label><input id="precipitation" type="range" min="60" max="80" step="1" value="80" aria-describedby="precipitation-help"><div class="endpoints"><span>60 days · drier</span><span>80 days · wetter</span></div><p id="precipitation-help">Fewer days of precipitation increase the chance of ignition.</p></div>
+</fieldset><div class="buttons"><button id="go">GO <span aria-hidden="true">→</span></button><button id="reset" class="secondary">RESET</button></div><p class="hint">RESET keeps your settings and creates a new forest.</p>
+<div class="explain"><h3>Watch the chain reaction</h3><p>A burning shrub can spread fire one cell away; a burning tree can spread it two cells away, including diagonals.</p><p id="probabilities"></p><p>Fire can stop early if nearby plants do not ignite. Each new forest may behave differently.</p></div>
+</aside></div></main></body></html>
+
+
