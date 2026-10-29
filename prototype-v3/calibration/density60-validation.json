@@ -1,0 +1,71 @@
+{
+  "engineSHA256": "b5e51b29c2bcb60918e7fdf495ab55a522055621c15a2d090439a62673348b09",
+  "heldOutSeeds": true,
+  "rows": [
+    {
+      "treeIgnition": 0.04,
+      "shrubIgnition": 1,
+      "runs": 5000,
+      "offset": 200001,
+      "treeMean": 9.211,
+      "shrubMean": 64.0265,
+      "mean95HalfWidth": [
+        0.24132310629860274,
+        0.8361912509521453
+      ],
+      "fractionRunsMeetingBoth": 0.0786
+    },
+    {
+      "treeIgnition": 0.045,
+      "shrubIgnition": 1,
+      "runs": 5000,
+      "offset": 200001,
+      "treeMean": 10.301,
+      "shrubMean": 64.7995,
+      "mean95HalfWidth": [
+        0.26166142623641725,
+        0.8374573875243468
+      ],
+      "fractionRunsMeetingBoth": 0.0662
+    },
+    {
+      "treeIgnition": 0.05,
+      "shrubIgnition": 1,
+      "runs": 5000,
+      "offset": 200001,
+      "treeMean": 11.497,
+      "shrubMean": 65.811,
+      "mean95HalfWidth": [
+        0.2831570722242871,
+        0.8386534538916683
+      ],
+      "fractionRunsMeetingBoth": 0.0548
+    },
+    {
+      "treeIgnition": 0.04,
+      "shrubIgnition": 0.95,
+      "runs": 5000,
+      "offset": 200001,
+      "treeMean": 8.802,
+      "shrubMean": 60.6365,
+      "mean95HalfWidth": [
+        0.23797586466940931,
+        0.8473064359657407
+      ],
+      "fractionRunsMeetingBoth": 0.0644
+    },
+    {
+      "treeIgnition": 0.04,
+      "shrubIgnition": 0.9,
+      "runs": 5000,
+      "offset": 200001,
+      "treeMean": 8.265,
+      "shrubMean": 56.6865,
+      "mean95HalfWidth": [
+        0.23243788461014783,
+        0.8463675969007182
+      ],
+      "fractionRunsMeetingBoth": 0.0524
+    }
+  ]
+}

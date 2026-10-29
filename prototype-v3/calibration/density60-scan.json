@@ -1,0 +1,136 @@
+{
+  "engineSHA256": "b5e51b29c2bcb60918e7fdf495ab55a522055621c15a2d090439a62673348b09",
+  "note": "Exploratory mean targets; no guarantee per run. Runtime engine unchanged.",
+  "rows": [
+    {
+      "treeIgnition": 0,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 1.455,
+      "shrubMean": 54.2225,
+      "mean95HalfWidth": [
+        0.1408357606273047,
+        1.823226248369286
+      ],
+      "fractionRunsMeetingBoth": 0.228
+    },
+    {
+      "treeIgnition": 0.01,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 3.08,
+      "shrubMean": 56.07,
+      "mean95HalfWidth": [
+        0.24503315491379327,
+        1.8598510311361012
+      ],
+      "fractionRunsMeetingBoth": 0.184
+    },
+    {
+      "treeIgnition": 0.02,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 4.945,
+      "shrubMean": 58.27,
+      "mean95HalfWidth": [
+        0.352823842482086,
+        1.8894429470111052
+      ],
+      "fractionRunsMeetingBoth": 0.142
+    },
+    {
+      "treeIgnition": 0.03,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 6.915,
+      "shrubMean": 60.0525,
+      "mean95HalfWidth": [
+        0.44849380724279253,
+        1.9176957836707853
+      ],
+      "fractionRunsMeetingBoth": 0.109
+    },
+    {
+      "treeIgnition": 0.04,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 9.005,
+      "shrubMean": 61.785,
+      "mean95HalfWidth": [
+        0.5308609736393638,
+        1.9418301940547074
+      ],
+      "fractionRunsMeetingBoth": 0.069
+    },
+    {
+      "treeIgnition": 0.05,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 11.535,
+      "shrubMean": 64.655,
+      "mean95HalfWidth": [
+        0.6195543993013799,
+        1.942738156598852
+      ],
+      "fractionRunsMeetingBoth": 0.042
+    },
+    {
+      "treeIgnition": 0.06,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 14.095,
+      "shrubMean": 66.3975,
+      "mean95HalfWidth": [
+        0.7181206101838122,
+        1.9574878083170049
+      ],
+      "fractionRunsMeetingBoth": 0.03
+    },
+    {
+      "treeIgnition": 0.07,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 16.855,
+      "shrubMean": 68.3125,
+      "mean95HalfWidth": [
+        0.8133555591656244,
+        1.9618959017438413
+      ],
+      "fractionRunsMeetingBoth": 0.017
+    },
+    {
+      "treeIgnition": 0.08,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 19.51,
+      "shrubMean": 70.06,
+      "mean95HalfWidth": [
+        0.91969766534206,
+        1.960719809766917
+      ],
+      "fractionRunsMeetingBoth": 0.01
+    },
+    {
+      "treeIgnition": 0.1,
+      "shrubIgnition": 1,
+      "runs": 1000,
+      "offset": 100001,
+      "treeMean": 25.145,
+      "shrubMean": 73.9075,
+      "mean95HalfWidth": [
+        1.063014313069109,
+        1.938843970063153
+      ],
+      "fractionRunsMeetingBoth": 0.005
+    }
+  ]
+}

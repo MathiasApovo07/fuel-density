@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fuel Density — Explore wildfire</title><link rel="stylesheet" href="styles.css"><script defer src="engine.js"></script><script defer src="app.js"></script></head>
+<body><a class="skip" href="#controls">Skip to simulation controls</a>
+
+<main><h1 class="sr-only">Fuel Density</h1>
+<div class="layout"><section class="forest-panel" aria-labelledby="forest-title"><div class="panel-heading"><div><h2 id="forest-title">Your forest</h2><p id="population"></p></div><div class="forest-actions"><span id="badge">Ready</span><button id="pause" class="secondary" disabled>Pause</button></div></div>
+<div id="forest" role="img" aria-label="Forest before ignition"></div>
+<div class="legend"><span><b class="tree-key">▲</b> Tree</span><span><b class="shrub-key">●</b> Shrub</span><span><b class="fire-key">♦</b> Burning</span><span><b>×</b> Burned</span></div>
+<div id="status" role="status" aria-live="polite" aria-atomic="true">Set your conditions, then select GO.</div>
+</section>
+<aside id="controls" tabindex="-1"><h2>Set the conditions</h2><p class="hint">Change the conditions, start a fire, and observe what remains.</p><fieldset id="settings"><legend class="sr-only">Forest and climate settings</legend>
+<div class="control"><div class="control-heading"><label for="suppression">Fire suppression</label><div class="help"><button type="button" class="info" id="suppression-info" aria-label="About fire suppression" aria-expanded="false" aria-controls="suppression-help">i</button><p id="suppression-help" class="help-text" hidden>Wildfire is a normal part of many ecosystems. When a fire sweeps through an ecosystem, it removes excess trees and shrubs. When humans suppress all wildfires, it causes the number of plants to accumulate. These plants act as fuel for fires.</p></div></div><input id="suppression" type="range" min="0" max="100" step="1" value="0" aria-describedby="suppression-help"><div class="endpoints"><span>Low</span><span>High</span></div></div>
+<div class="control"><div class="control-heading"><label for="temperature">Temperature <output for="temperature" id="temperature-value">70 °F</output></label><div class="help"><button type="button" class="info" id="temperature-info" aria-label="About temperature" aria-expanded="false" aria-controls="temperature-help">i</button><p id="temperature-help" class="help-text" hidden>Higher temperatures make vegetation more likely to ignite. Over the years, average summer temperatures have increased, which affects wildfire risk.</p></div></div><input id="temperature" type="range" min="70" max="90" step="1" value="70" aria-describedby="temperature-help"><div class="endpoints"><span>70 °F</span><span>90 °F</span></div></div>
+<div class="control"><div class="control-heading"><label for="precipitation">Precipitation <output for="precipitation" id="precipitation-value">80 days</output></label><div class="help"><button type="button" class="info" id="precipitation-info" aria-label="About precipitation" aria-expanded="false" aria-controls="precipitation-help">i</button><p id="precipitation-help" class="help-text" hidden>Wet vegetation is less likely to ignite. Over the years, the amount of precipitation has become more variable, which affects wildfire risk.</p></div></div><input id="precipitation" type="range" min="60" max="80" step="1" value="80" aria-describedby="precipitation-help"><div class="endpoints"><span>60 days · drier</span><span>80 days · wetter</span></div></div>
+</fieldset><div class="buttons"><button id="go">GO <span aria-hidden="true">→</span></button><button id="reset" class="secondary">RESET</button></div><p class="hint">RESET keeps your settings and creates a new forest.</p>
+
+<section class="results" aria-labelledby="results-title"><h2 id="results-title">What happened?</h2><p id="results-note">Results update as the fire spreads.</p><div class="metrics">
+<div><strong id="total-result">0%</strong><span>Total fuel burned</span><small id="total-count"></small></div>
+<div><strong id="tree-result">0%</strong><span>Trees burned</span><small id="tree-count"></small></div>
+<div><strong id="shrub-result">0%</strong><span>Shrubs burned</span><small id="shrub-count"></small></div>
+<div><strong id="density-result">30%</strong><span>Remaining fuel density</span><small>intact plants / 100 cells</small></div>
+</div></section></aside></div></main></body></html>
+
+

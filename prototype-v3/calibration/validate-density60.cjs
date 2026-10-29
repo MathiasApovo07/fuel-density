@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path'),{measure,hash}=require('./density60.cjs');const rows=[];for(const [pt,ps] of [[.04,1],[.045,1],[.05,1],[.04,.95],[.04,.9]]){const r=measure(pt,ps,5000,200001);rows.push(r);console.log(JSON.stringify(r));}fs.writeFileSync(path.join(__dirname,'density60-validation.json'),JSON.stringify({engineSHA256:hash,heldOutSeeds:true,rows},null,2));
